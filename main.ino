@@ -6,16 +6,16 @@ Servo myServo;
 Password myPassword = Password("1234");
 int pos = 0;
 
-const byte ROWS = 4; //four rows
-const byte COLS = 4; //three columns
+const byte ROWS = 4;
+const byte COLS = 4;
 char keys[ROWS][COLS] = {
   {'1','2','3','A'},
   {'4','5','6','B'},
   {'7','8','9','C'},
   {'*','0','#','D'}
 };
-byte rowPins[ROWS] = {8,7,6,5}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {4,3,2,1}; //connect to the column pinouts of the keypad
+byte rowPins[ROWS] = {8,7,6,5};
+byte colPins[COLS] = {4,3,2,1};
 
 Keypad myKeypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
